@@ -17,9 +17,15 @@
   <main>
     <div class="flex h-screen">
       <div class="bg-card w-80 p-5 rounded-2xl m-auto">
-        <img class="rounded-xl mb-6" src="./images/image-equilibrium.jpg" alt="equilibrium" />
+        <div class="relative group">
+          <img class="rounded-xl mb-6" src="./images/image-equilibrium.jpg" alt="equilibrium" />
+          <div class="rounded-xl absolute inset-0 bg-cyan opacity-0 group-hover:opacity-50 transition-opacity"></div>
+          <img
+            class="absolute opacity-0 inset-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 group-hover:opacity-100 transition-opacity"
+            src="./images/icon-view.svg" alt="">
+        </div>
 
-        <h1 class="text-white text-lg font-semibold tracking-wider">
+        <h1 class="text-white text-lg font-semibold tracking-wider hover:text-cyan hover:cursor-pointer">
           Equilibrium #3429
         </h1>
         <p class="font-light leading-6 my-3 text-sm">
@@ -43,7 +49,7 @@
         <div class="flex items-center">
           <img class="mr-4 w-8 border rounded-full border-white" src="./images/image-avatar.png" alt="avatar">
           <p class="text-sm">
-            Creation of <span class="text-white">Jules Wyvern</span>
+            Creation of <span class="text-white hover:text-cyan hover:cursor-pointer">Jules Wyvern</span>
           </p>
         </div>
       </div>
